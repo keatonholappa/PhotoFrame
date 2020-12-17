@@ -27,7 +27,7 @@ if [[ ! -z $PERSISTENT ]] && [[ "$PERSISTENT" -eq "1" ]]
     rm -f /data/SingletonLock
 fi
 
-echo "chromium-browser $CHROME_LAUNCH_URL $KIOSK $FLAGS --window-size=$WINDOW_SIZE" >> /home/chromium/xstart.sh
+echo "chromium-browser $CHROME_LAUNCH_URL $KIOSK $FLAGS --window-size=$WINDOW_SIZE --window-position=$WINDOW_POSITION" >> /home/chromium/xstart.sh
 
 
 # run script as chromium user
